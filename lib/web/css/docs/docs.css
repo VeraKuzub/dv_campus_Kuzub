@@ -8900,7 +8900,7 @@ cite {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='#ccccff', GradientType=1);
 }
 .example-url-check {
-  background: #eeeeee url('/images/test.png') no-repeat 0 0;
+  background: #eeeeee url('/app/design/frontend/Verak/web/images/test.png') no-repeat 0 0;
 }
 body {
   padding: 15px;
