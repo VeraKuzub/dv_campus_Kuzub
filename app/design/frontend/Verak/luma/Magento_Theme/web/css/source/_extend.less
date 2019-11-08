@@ -8,5 +8,28 @@
 @footer-links-color-hover: @color-yellow-light1;
 @footer-links-color-current: darken(@color-yellow-light1, 13.5%);
 
+@header-links-color: @color-white;
+@header-link-color-hover: @color-yellow-light1;
+@header-links-color-active: @color-yellow-light1;
+@header-links-color-current: darken(@color-yellow-light1, 13.5%);
 
-
+& when (@media-common = true) {
+  .header.panel {
+    > .header.links {
+      > li {
+        > a {
+          .lib-link(
+            @_link-color: @header-links-color,
+            @_link-text-decoration: none,
+            @_link-color-visited: @header-links-color,
+            @_link-text-decoration-visited: none,
+            @_link-color-hover: @header-link-color-hover,
+            @_link-text-decoration-hover: underline,
+            @_link-color-active: @header-links-color-active,
+            @_link-text-decoration-active: underline
+          );
+        }
+      }
+    }
+  }
+}
