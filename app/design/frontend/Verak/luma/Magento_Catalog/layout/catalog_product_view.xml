@@ -87,7 +87,7 @@
                         </block>
                     </block>
                 </block>
-                <container name="product.info.extrahint" as="extrahint" label="Product View Extra Hint">
+                <container name="product.info.extrahint" as="extrahint" label="Product View Extra Hint" before="product.info.price">
                     <container name="product.info.social" label="Product social links container" htmlTag="div" htmlClass="product-social-links">
                         <block class="Magento\Catalog\Block\Product\View" name="product.info.addto" as="addto" template="Magento_Catalog::product/view/addto.phtml">
                             <block class="Magento\Catalog\Block\Product\View\AddTo\Compare" name="view.addto.compare" after="view.addto.wishlist"
