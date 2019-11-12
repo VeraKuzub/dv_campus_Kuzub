@@ -29,7 +29,7 @@
             </arguments>
         </referenceBlock>
 
-        <referenceBlock name="breadcrumbs" template="Magento_Catalog::product/breadcrumbs.phtml">
+        <referenceBlock name="breadcrumbs" template="Magento_Catalog::product/breadcrumbs.phtml" remove="true">
             <arguments>
                 <argument name="viewModel" xsi:type="object">Magento\Catalog\ViewModel\Product\Breadcrumbs</argument>
             </arguments>
