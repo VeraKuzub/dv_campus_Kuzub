@@ -15,6 +15,11 @@ services:
       - traefik.grunt.frontend.entryPoints=grunt
       - traefik.grunt.protocol=http
       - traefik.grunt.port=35729
+      - traefik.gruntHttp.frontend.rule=Host:vera-kuzub.local,www.vera-kuzub.local,vera-kuzub-shop.local,www.vera-kuzub-shop.local
+      - traefik.gruntHttp.frontend.entryPoints=gruntHttp
+      - traefik.gruntHttp.backend=grunt
+      - traefik.gruntHttp.protocol=http
+      - traefik.gruntHttp.port=35729
     extra_hosts:
       # For Linux users only till docker.host.internal is not available by default
       # https://github.com/docker/libnetwork/pull/2348/files

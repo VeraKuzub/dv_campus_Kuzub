@@ -23,7 +23,7 @@ services:
         - MEMCACHED=0
     restart: always
     labels:
-       - traefik.enable=true
+      - traefik.enable=true
       - traefik.http.frontend.rule=Host:vera-kuzub.local,www.vera-kuzub.local,vera-kuzub-shop.local,www.vera-kuzub-shop.local
       - traefik.http.frontend.entryPoints=http
       - traefik.https.frontend.rule=Host:vera-kuzub.local,www.vera-kuzub.local,vera-kuzub-shop.local,www.vera-kuzub-shop.local
