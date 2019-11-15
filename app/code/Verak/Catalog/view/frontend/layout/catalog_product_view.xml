@@ -8,7 +8,12 @@
                    name="product.info.demo"
                    before="product.info.details"
                    template="Verak_Catalog::product/view/demo.phtml"
-                />
+            >
+                <arguments>
+                    <argument name="number_variable" xsi:type="number">35</argument>
+                    <argument name="string_variable" xsi:type="string">Demo</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>

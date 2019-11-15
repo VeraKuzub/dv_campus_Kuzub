@@ -1,1 +1,10 @@
-<p>demo test</p>
+<?php
+/** @var Magento\Framework\View\Element\Template $block */
+/** @var string $someString*/
+/** @var int $someNumber*/
+?>
+<?php $foo = false ?>
+<h2>This demo block</h2>
+<p>String: <?= $someString = $block->getData('string_variable') ?></p>
+<p>Number: <?= $someNumber = $block->getData('number_variable') ?></p>
+
