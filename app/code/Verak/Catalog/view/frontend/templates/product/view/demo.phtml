@@ -1,10 +1,6 @@
-<?php
-/** @var Magento\Framework\View\Element\Template $block */
-/** @var string $someString*/
-/** @var int $someNumber*/
-?>
+<?php /** @var \Verak\Catalog\Block\Product\View\Demo $block */?>
 <?php $foo = false ?>
 <h2>This demo block</h2>
-<p>String: <?= $someString = $block->getData('string_variable') ?></p>
-<p>Number: <?= $someNumber = $block->getData('number_variable') ?></p>
+<p>String: <?= $block->getStringVariable() ?></p>
+<p>Number: <?= $block->getNumberVariable() ?></p>
 

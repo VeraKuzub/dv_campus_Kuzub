@@ -4,7 +4,7 @@
 >
     <body>
         <referenceContainer name="product.info.main">
-            <block class="Magento\Framework\View\Element\Template"
+            <block class="Verak\Catalog\Block\Product\View\Demo"
                    name="product.info.demo"
                    before="product.info.details"
                    template="Verak_Catalog::product/view/demo.phtml"
