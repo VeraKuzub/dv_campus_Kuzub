@@ -6,6 +6,7 @@
                 <container name="div.product.info.demo" htmlTag="div" htmlClass="message error"  before="product.info.details">
                     <block class="Verak\Catalog\Block\Product\View\Demo"
                            name="product.info.demo"
+                           before="-"
                            template="Verak_Catalog::product/view/demo.phtml"
                     >
                         <arguments>
