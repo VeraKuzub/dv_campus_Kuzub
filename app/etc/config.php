@@ -245,6 +245,7 @@ return [
         'MSP_TwoFactorAuth' => 1,
         'Temando_Shipping' => 1,
         'Verak_Catalog' => 1,
+        'Verak_Cms' => 1,
         'Vertex_Tax' => 1,
         'Yotpo_Yotpo' => 1
     ]
