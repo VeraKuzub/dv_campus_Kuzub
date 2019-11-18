@@ -8,6 +8,10 @@
                         <argument name="block_id" xsi:type="string">left_column_image</argument>
                     </arguments>
                 </block>
+                <block class="Magento\Framework\View\Element\Template" name="left_column_text"
+                    after="left_column_image"
+                    template="Magento_Theme::product/view/text.phtml"
+                    />
             </container>
         </referenceContainer>
     </body>
