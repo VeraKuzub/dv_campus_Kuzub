@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <page  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="columns">
-            <container name="div_left_column_image" htmlTag="div" htmlClass="left-colomn-container"  after="div.sidebar.additional">
+        <referenceContainer name="sidebar.additional">
+            <container name="div_left_column_image" htmlTag="div" htmlClass="left-colomn-container" after="wishlist_sidebar">
                 <block class="Magento\Cms\Block\Block" name="left_column_image">
                     <arguments>
                         <argument name="block_id" xsi:type="string">left_column_image</argument>
@@ -10,7 +10,7 @@
                 </block>
                 <block class="Magento\Framework\View\Element\Template" name="left_column_text"
                     after="left_column_image"
-                    template="Magento_Theme::product/view/text.phtml"
+                    template="Magento_Theme::info/view/text.phtml"
                     />
             </container>
         </referenceContainer>
