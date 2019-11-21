@@ -4,5 +4,8 @@
         <route id="demo_data" frontName="dv-campus-demo-data">
             <module name="Verak_ControllerDemo" />
         </route>
+        <route id="demo_redirect" frontName="dv-campus-demo-redirect">
+            <module name="Verak_ControllerDemo" />
+        </route>
     </router>
 </config>
