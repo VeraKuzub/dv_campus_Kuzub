@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Verak\ControllerDemo\Controller\Redirect;
+namespace Verak\ControllerDemo\Controller\Forward;
 
 use \Magento\Framework\Controller\ResultFactory;
 use \Magento\Framework\Controller\Result\Redirect;
 
-class RedirectDemo extends \Magento\Framework\App\Action\Action implements
+class Forward extends \Magento\Framework\App\Action\Action implements
     \Magento\Framework\App\Action\HttpGetActionInterface
 {
     /**
      * @inheritDoc
-     * https:vera-kuzub.local/dv-campus-demo-redirect/redirect/redirectDemo
+     * https:vera-kuzub.local/dv-campus-demo-redirect/forward/forward
      * TODO  url_git_hub => https://github.com/VeraKuzub/dv_campus_Kuzub
      */
 
