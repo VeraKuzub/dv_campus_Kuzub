@@ -1,3 +1,3 @@
 <?php /** @var \Magento\Framework\View\Element\Template $block */?>
 <p>Full name: <?=$block->getRequest()->getParam('first_name') . ' ' . $block->getRequest()->getParam('second_name')?></p>
-<p>Repository URL: <a href="<?= urldecode($block->getRequest()->getParam('url_git_hub'))?>" target='_blank'>Forward <?= urldecode($block->getRequest()->getParam('url_git_hub')) ?></a></p>
+<p>Repository URL: <a href="<?= urldecode($block->getRequest()->getParam('url_git_hub'))?>" target='_blank'><?= urldecode($block->getRequest()->getParam('url_git_hub')) ?></a></p>
