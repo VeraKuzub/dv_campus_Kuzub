@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Verak\ControllerDemo\Controller\Data;
 
 use \Magento\Framework\Controller\ResultFactory;
-use \Magento\Framework\Controller\Result\Json;
+use Magento\Framework\View\Result\Layout;
 
 class Data extends \Magento\Framework\App\Action\Action implements
     \Magento\Framework\App\Action\HttpGetActionInterface
@@ -15,20 +15,13 @@ class Data extends \Magento\Framework\App\Action\Action implements
      */
     public function execute()
     {
-        /** @var \Magento\Framework\App\Request\HTTP $request */
+        /** @var \Magento\Framework\App\Request\Http $request */
         $request = $this->getRequest();
 
-        $firstName = $request->getParam('first_name');
-        $secondName = $request->getParam('second_name');
-        $url = $request->getParam('url_git_hub');
+        $xmlFileName = $request->getFullActionName();
 
-        /** @var Json $response */
-        $response = $this->resultFactory->create(ResultFactory::TYPE_JSON);
-        $response->setData([
-            'Full name: ' => $firstName . ' ' . $secondName,
-            'Repository URL: ' => $url
-        ]);
-
+        /** @var Layout $response */
+        $response = $this->resultFactory->create(ResultFactory::TYPE_LAYOUT);
         return $response;
     }
 }
