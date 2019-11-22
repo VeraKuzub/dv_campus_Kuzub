@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Verak\ControllerDemo\Controller\Data;
 
 use \Magento\Framework\Controller\ResultFactory;
-use Magento\Framework\View\Result\Layout;
+use Magento\Framework\View\Result\Page;
 
 class Data extends \Magento\Framework\App\Action\Action implements
     \Magento\Framework\App\Action\HttpGetActionInterface
@@ -15,13 +15,8 @@ class Data extends \Magento\Framework\App\Action\Action implements
      */
     public function execute()
     {
-        /** @var \Magento\Framework\App\Request\Http $request */
-        $request = $this->getRequest();
-
-        $xmlFileName = $request->getFullActionName();
-
-        /** @var Layout $response */
-        $response = $this->resultFactory->create(ResultFactory::TYPE_LAYOUT);
+        /** @var Page $response */
+        $response = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
         return $response;
     }
 }
