@@ -12,7 +12,6 @@ class Forward extends \Magento\Framework\App\Action\Action implements
     /**
      * @inheritDoc
      * https:vera-kuzub.local/dv-campus-demo-redirect/forward/forward
-     * TODO  url_git_hub => https://github.com/VeraKuzub/dv_campus_Kuzub
      */
 
     public function execute()
@@ -21,13 +20,15 @@ class Forward extends \Magento\Framework\App\Action\Action implements
         $response = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
         $response->setHttpResponseCode(301);
 
+        $url = urlencode('https://github.com/VeraKuzub/dv_campus_Kuzub');
+
         return $response->setPath(
             'demo_data/data/data',
             [
                 '_secure'=>true,
                 'first_name'=>'Vera',
                 'second_name'=>'Kuzub',
-                'url_git_hub'=>'github.com'
+                'url_git_hub'=> $url
             ]
         );
     }
