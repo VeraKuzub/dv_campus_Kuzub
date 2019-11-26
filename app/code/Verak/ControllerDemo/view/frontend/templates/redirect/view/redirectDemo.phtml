@@ -1,2 +1,2 @@
 <?php /** @var \Magento\Framework\View\Element\Template $block */?>
-<li><a href="<?=$block->escapeUrl($block->getUrl('dv-campus-demo-redirect/forward/forward'))?>">Click to see how redirect work</a></li>
+<li><a href="<?=$block->escapeHtmlAttr($block->getUrl('dv-campus-demo-redirect/forward/forward'))?>"><?=$block->escapeHtml(__('Click to see how redirect work'))?></a></li>

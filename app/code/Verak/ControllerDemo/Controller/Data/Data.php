@@ -11,7 +11,7 @@ class Data extends \Magento\Framework\App\Action\Action implements
 {
     /**
      * @inheritDoc
-     * https:vera-kuzub.local/dv-campus-demo-data/data/data/first_name/Vera/second_name/Kuzub/url_git_hub/VeraKuzub
+     * https:vera-kuzub.local/dv-campus-demo-data/data/data/first_name/Vera/second_name/Kuzub/url_git_hub/aHR0cHM6LS1naXRodWIuY29tLVZlcmFLdXp1Yi1kdl9jYW1wdXNfS3V6dWI%3D
      */
     public function execute()
     {

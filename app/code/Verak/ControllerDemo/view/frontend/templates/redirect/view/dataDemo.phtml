@@ -1,3 +1,3 @@
-<?php /** @var \Magento\Framework\View\Element\Template $block */?>
-<p>Full name: <?=$block->getRequest()->getParam('first_name') . ' ' . $block->getRequest()->getParam('second_name')?></p>
-<p>Repository URL: <a href="<?= urldecode($block->getRequest()->getParam('url_git_hub'))?>" target='_blank'><?= urldecode($block->getRequest()->getParam('url_git_hub')) ?></a></p>
+<?php /** @var \Verak\ControllerDemo\Block\Info\View\InfoForRedirect $block */?>
+<p><?=$block->escapeHtml(__('Full name: %1 %2',$block->getFirstName(), $block->getSecondName()))?></p>
+<p><?=$block->escapeHtml(__('Repository URL:'))?> <a href="<?=$block->escapeHtmlAttr($block->getUrlParam())?>" target='_blank'><?=$block->escapeHtml($block->getUrlParam())?></a></p>
